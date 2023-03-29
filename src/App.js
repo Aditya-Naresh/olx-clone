@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SignupPage from './Pages/Signup';
+import Login from './Pages/Login';
 import './App.css';
 
 /**
@@ -19,7 +20,14 @@ function App() {
         <Route path='/signup'>
           <SignupPage />
         </Route>
+
+        <Route path='/login'>
+          <Login />
+        </Route>
       </Router>
+
+
+
     </div>
   );
 }
