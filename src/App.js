@@ -8,6 +8,7 @@ import './App.css';
  * ?  =====Import Components=====
  */
 import Home from './Pages/Home';
+import Create from './Pages/Create';
 import { AuthContext, FirebaseContext } from './store/Context';
 
 function App() {
@@ -31,6 +32,10 @@ function App() {
 
         <Route path='/login'>
           <Login />
+        </Route>
+
+        <Route path='/create'>
+          <Create />
         </Route>
       </Router>
 
