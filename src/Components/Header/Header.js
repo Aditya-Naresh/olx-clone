@@ -39,7 +39,7 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span> {user? `Welcome ${user.displayName}` : "Login"} </span>
+          <span> {user? `Welcome ${user.displayName}` : <a href="/login">Login</a>} </span>
           <hr />
         </div>
 
@@ -49,11 +49,13 @@ function Header() {
         }}> "Logout"</span>}
 
         <div className="sellMenu">
+          <a href="/create">
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span>SELL</span>
           </div>
+          </a>
         </div>
       </div>
     </div>
